@@ -127,8 +127,8 @@
 
 ## 📦 代码库结构
 
-* [WinLogon DLL](https://www.google.com/search?q=Server/) - 负责与系统登录界面交互的核心组件。
-* [图形化界面](https://www.google.com/search?q=UI/) - 负责面容录入、配置管理的主程序。
+* [WinLogon DLL](Server/) - 负责与系统登录界面交互的核心组件。
+* [图形化界面](UI/) - 负责面容录入、配置管理的主程序。
 
 ---
 
