@@ -2,6 +2,11 @@
 
 **FaceWinUnlock-Tauri** 是一款基于 Tauri 框架开发的现代化 Windows 面容识别解锁增强软件。它通过自定义 Credential Provider (DLL) 注入 Windows 登录界面，结合前端 Vue 3 和后端 OpenCV 人脸识别算法，为用户提供类似 Windows Hello 的解锁体验。
 
+## 下载地址
+[百度云 提取码: 2ugj](https://pan.baidu.com/s/1UxEflXFxJN6wQBjBbwK9vw) 
+
+[天翼云 访问码：u9gv](https://cloud.189.cn/t/FNvee2mQfumm)
+
 ## 📖 前言
 
 这个项目的诞生源于一次小小的“心理落差”：
@@ -98,7 +103,7 @@
 
 以下是目前开发中遇到的技术瓶颈，欢迎有能力的开发者提交 PR 协助修复：
 
-* **多账户兼容性问题**：在 Win11 非 Administrator 账户下程序无法正常运行，Win10 无此问题。
+* **多账户兼容性问题**：在 Win11 非 Administrator 多账户下程序无法正常运行，单个账户没问题，Win10 无此问题。
 * **卸载流程简化**：目前缺乏全自动卸载脚本（需编写 NSIS 脚本以实现一键清理）。
 * **活体检测缺失**：暂无活体检测算法，现阶段照片可绕过识别，存在安全隐患。
 * **锁屏 UI 增强**：受限于 Windows 锁屏界面隔离机制，暂无法实现类似 Win Hello 的原生动画与动态通知。
@@ -111,7 +116,7 @@
 * **系统级集成**: 自动注册 WinLogon 凭据提供程序 (Credential Provider)。
 * **双账户支持**: 同时支持本地账户 (Local Account) 与微软联机账户 (MSA) 解锁。
 * **轻量级后端**: Rust 后端确保了高效的文件 IO 处理与注册表操作安全性。
-* **隐私保护**: 所有面容特征数据与系统凭据均通过 SQLite 本地加密存储，**绝不上传云端**。
+* **隐私保护**: 系统凭据通过 SQLite 本地存储，**绝不上传云端**。
 
 ---
 
